@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OAuth Callback</title>
+  </head>
+  <body>
+    <h1>Authorization Successful</h1>
+    <p>You may now close this window.</p>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const code = params.get("code");
+      console.log("Authorization Code:", code);
+    </script>
+  </body>
+</html>
